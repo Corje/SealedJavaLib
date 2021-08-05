@@ -1,6 +1,5 @@
 plugins {
     java
-    `maven-publish`
 }
 
 group = "org.example"
@@ -21,16 +20,4 @@ tasks.getByName<Test>("test") {
 
 tasks.withType<JavaCompile>() {
     options.compilerArgs.plusAssign("--enable-preview")
-}
-
-publishing {
-    publications {
-        create<MavenPublication>("maven") {
-            groupId = "alex.danilov.sealed"
-            artifactId = "library"
-            version = "1.1"
-
-            from(components["java"])
-        }
-    }
 }
