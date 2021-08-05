@@ -21,4 +21,7 @@ tasks.getByName<Test>("test") {
 
 tasks.withType<JavaCompile>() {
     options.compilerArgs.plusAssign("--enable-preview")
+    sourceCompatibility = "16"
+    targetCompatibility = "16"
+
 }
