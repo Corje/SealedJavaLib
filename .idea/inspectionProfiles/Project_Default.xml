@@ -1,0 +1,53 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="SSBasedInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <searchConfiguration name="IDE default" text="$Before$.$MethodCall$($Parameter$)" recursive="false" caseInsensitive="true" type="Kotlin" pattern_context="default">
+        <constraint name="__context__" within="" contains="" />
+        <constraint name="Before" within="" contains="" />
+        <constraint name="MethodCall" within="" contains="" />
+        <constraint name="Parameter" regexp="x" within="" contains="" />
+      </searchConfiguration>
+      <searchConfiguration name="My Java Insp" text="class $Class$ extends $Parent$ {}" recursive="false" caseInsensitive="true" type="JAVA" pattern_context="default">
+        <constraint name="__context__" within="" contains="" />
+        <constraint name="Class" regexp="uuuu" target="true" within="" contains="" />
+        <constraint name="Parent" within="" contains="" />
+      </searchConfiguration>
+      <searchConfiguration name="comments containing a given word" description="please don't do that" problemDescriptor="bad comment" text="// $before$ bug $after$" recursive="false" caseInsensitive="true" type="Kotlin" pattern_context="default">
+        <constraint name="__context__" within="" contains="" />
+        <constraint name="before" within="" contains="" />
+        <constraint name="after" within="" contains="" />
+      </searchConfiguration>
+      <replaceConfiguration name="comments containing a given word" description="please don't do that" problemDescriptor="bad comment" order="1" text="// $before$ bug $after$" recursive="false" caseInsensitive="true" type="Kotlin" pattern_context="default" reformatAccordingToStyle="false" shortenFQN="false" replacement="// $before$ not a bug $after$">
+        <constraint name="__context__" within="" contains="" />
+        <constraint name="before" within="" contains="" />
+        <constraint name="after" within="" contains="" />
+      </replaceConfiguration>
+      <replaceConfiguration name="My Java Insp" order="1" text="class $Class$ extends $Parent$ {}" recursive="false" caseInsensitive="true" type="JAVA" pattern_context="default" reformatAccordingToStyle="false" shortenFQN="false" replacement="class MyReplaceClass extends $Parent$ {}">
+        <constraint name="__context__" within="" contains="" />
+        <constraint name="Class" regexp="ReplaceClass" target="true" within="" contains="" />
+        <constraint name="Parent" within="" contains="" />
+      </replaceConfiguration>
+      <replaceConfiguration name="My Java Insp" order="2" text="class $Class$ extends $Parent$ {}" recursive="false" caseInsensitive="true" type="JAVA" pattern_context="default" reformatAccordingToStyle="false" shortenFQN="false" replacement="class MyReplaceClass extends $Parent$ {}">
+        <constraint name="__context__" within="" contains="" />
+        <constraint name="Class" regexp="ReplaceClass" target="true" within="" contains="" />
+        <constraint name="Parent" minCount="0" within="" contains="" />
+      </replaceConfiguration>
+      <replaceConfiguration name="My Java Insp" order="3" text="class $Class$ extends $Parent$ {}" recursive="false" caseInsensitive="true" type="JAVA" pattern_context="default" reformatAccordingToStyle="false" shortenFQN="false" replacement="class MyReplaceClass extends $Parent$ {}">
+        <constraint name="__context__" within="" contains="" />
+        <constraint name="Class" regexp="ReplaceClass" within="" contains="" />
+        <constraint name="Parent" minCount="0" within="" contains="" />
+      </replaceConfiguration>
+      <replaceConfiguration name="My Java Insp" order="4" text="class $Class$ extends $Parent$ {}" recursive="false" caseInsensitive="true" type="JAVA" pattern_context="default" reformatAccordingToStyle="false" shortenFQN="false" replacement="final class $Class$ extends $Parent$ {}">
+        <constraint name="__context__" within="" contains="" />
+        <constraint name="Class" regexp="ReplaceClass" within="" contains="" />
+        <constraint name="Parent" minCount="0" within="" contains="" />
+      </replaceConfiguration>
+      <replaceConfiguration name="My Java Insp" order="5" text="class $Class$ extends $Parent$ {}" recursive="false" caseInsensitive="true" type="JAVA" pattern_context="default" reformatAccordingToStyle="false" shortenFQN="false" replacement="final class $Class$ extends $Parent$ {}">
+        <constraint name="__context__" within="" contains="" />
+        <constraint name="Class" regexp="ReplaceClass" within="" contains="" />
+        <constraint name="Parent" minCount="0" within="" contains="" />
+      </replaceConfiguration>
+    </inspection_tool>
+  </profile>
+</component>
